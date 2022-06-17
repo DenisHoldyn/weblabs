@@ -1,0 +1,25 @@
+.hd{
+    text-align: center;
+    font-size: 48px;
+}
+
+body{
+    background-color: #A15240;
+    color:#EDA35F;
+}
+
+.txt{
+    text-align: center;
+    font-size: 28px;
+}
+
+.myim{
+    display: block;
+    margin: auto;
+    width:70%;
+}
+
+.mysvg{
+    width: 20%;
+    margin: 40px;
+}
