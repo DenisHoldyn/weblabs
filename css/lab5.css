@@ -1,0 +1,42 @@
+.hd{
+    font-size: 36px;
+    text-align: center;
+}
+
+@font-face{
+    font-family:"Grecha";
+    src:url("../fonts/grecha.ttf");
+}
+
+h1{
+    font-family: "Grecha";
+}
+
+
+
+.txt{
+    font-family: 'Oswald', sans-serif;
+}
+
+.myh2{
+    text-align: center;
+    font-size: 26px;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+.icons{
+   margin: 20px;
+    background-color: aqua;
+}
+
+.myic{
+    font-size: 60px;
+    margin:70px;
+}
+
+.myic:hover{
+   text-shadow:  #FC0 1px 0 10px;
+}
