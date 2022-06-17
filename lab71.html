@@ -1,0 +1,97 @@
+<!doctype>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="css/owlcarousel/owl.carousel.css" rel="stylesheet">
+        <link href="css/owlcarousel/owl.theme.default.css" rel="stylesheet">
+        <link href="css/magnific-popup.css" rel="stylesheet">
+        <link href="css/lab71.css" rel="stylesheet">
+    </head>
+    
+    <body>
+    <h1>Плагіни</h1>
+        <div class="owl-carousel owl-theme">
+							
+            <div><img src="pictures/1cat.jpg"></div>
+
+            <div><img src="pictures/2cat.jpg"></div>
+
+            <div><img src="pictures/3cat.jpg"></div>
+
+            <div><img src="pictures/4cat.jpg"></div>
+
+            <div><img src="pictures/5cat.jpg"></div>
+
+            <div><img src="pictures/6cat.jpg"></div>
+
+        </div>
+        
+        <div class="zoom-gallery">
+	<!--
+
+	Width/height ratio of thumbnail and the main image must match to avoid glitches.
+
+	If ratios are different, you may add CSS3 opacity transition to the main image to make the change less noticable.
+
+	 -->
+	   <a href="http://farm4.staticflickr.com/3763/9204547649_0472680945_o.jpg" data-source="http://500px.com/photo/32736307" title="Into The Blue" style="width:193px;height:125px;">
+		<img src="http://farm4.staticflickr.com/3763/9204547649_7de96ee188_t.jpg" width="193" height="125">
+	   </a>
+	   <a href="http://farm3.staticflickr.com/2856/9207329420_7f2a668b06_o.jpg" data-source="http://500px.com/photo/32554131" title="Light Sabre" style="width:82px;height:125px;">
+		<img src="http://farm3.staticflickr.com/2856/9207329420_e485948b01_t.jpg" width="82px" height="125">
+	   </a>
+        </div>
+        
+        
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/owlcarousel/owl.carousel.js"></script>
+        <scrept src="js/jquery.magnific-popup.js"></scrept>
+        <script>
+
+            $(document).ready(function() {
+	           $('.zoom-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+			}
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+		
+	});
+});
+        </script>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
