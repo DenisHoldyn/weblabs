@@ -1,0 +1,20 @@
+.myim{
+   width:400px;
+   height: 250px;
+}
+
+.mylist{
+    height: 50px;
+}
+
+.right{
+    float:right;
+    margin-top:350px;
+    text-align: left;
+    margin-right: 700px;
+}
+
+.left{
+    float:left;
+    margin-top:350px;
+}

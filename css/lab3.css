@@ -1,0 +1,16 @@
+body{
+background-color: #FA3D3D;
+}
+
+.hed{
+    text-align: center;
+    font-size: 72px;
+    color:white;
+}
+
+.txt{
+    font-size: 26px;
+    text-align: center;
+    margin: 0px 60px 0px 60px;
+    color:white;
+}
