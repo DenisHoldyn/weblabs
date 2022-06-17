@@ -1,0 +1,34 @@
+.hd{
+    text-align: center;
+    font-size: 36px;
+}
+
+body{
+    background-color:burlywood;
+}
+
+.desk{
+    text-align: center;
+    font-size: 26px;
+    margin: 20px;
+}
+
+.mymap{
+    border-radius: 10%;
+    border: solid 2px black;
+    width:60%;
+    display: block;
+    margin: auto;
+}
+
+.pan{
+    display: block;
+    margin: auto;
+}
+
+.myvid{
+    display: block;
+    margin: auto;
+    border:solid 4px pink;
+    border-radius: 30px;
+}
